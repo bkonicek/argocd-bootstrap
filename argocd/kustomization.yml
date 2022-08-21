@@ -4,9 +4,9 @@ kind: Kustomization
 resources:
   # - base/repository.yaml
   # - base/secrets.yaml
-  - base/applications.yml
+  - base/application-argocd.yml
   # - base/ingress.yaml
-  - https://github.com/argoproj/argo-cd/manifests/cluster-install?ref=v2.2.4
+  - https://github.com/argoproj/argo-cd/manifests/cluster-install?ref=v2.4.0-rc5
 
 patchesStrategicMerge:
   - overlays/service.yml

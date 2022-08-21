@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: "https://github.com/bkonicek/argocd-bootstrap.git"
     path: argocd
-    targetRevision: master
+    targetRevision: main
   destination:
     namespace: argocd
     name: in-cluster
