@@ -12,6 +12,7 @@ resources:
 
 patchesStrategicMerge:
   - overlays/service.yml
+  - overlays/configmap.yml
   # - overlays/argocd-secret.yaml
 
 patchesJson6902:
