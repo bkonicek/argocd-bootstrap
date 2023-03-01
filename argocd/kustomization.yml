@@ -6,7 +6,7 @@ resources:
   # - base/secrets.yaml
   - base/application-argocd.yml
   - base/application-base-tools.yml
-  # - base/ingress.yaml
+  - base/ingress.yaml
   # - overlays/configmap.yaml
   - https://github.com/argoproj/argo-cd/manifests/cluster-install?ref=v2.5.2
 
