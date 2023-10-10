@@ -11,10 +11,10 @@ patchesStrategicMerge:
     # - overlays/argocd-secret.yaml
 
 namespace: argocd
-patches:
-  - path: overlays/deploy-command.yaml
-    target:
-      group: apps
-      kind: Deployment
-      name: argocd-server
-      version: v1
+# patches:
+#   - path: overlays/deploy-command.yaml
+#     target:
+#       group: apps
+#       kind: Deployment
+#       name: argocd-server
+#       version: v1
