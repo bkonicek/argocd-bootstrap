@@ -4,9 +4,9 @@ metadata:
   name: argocd-cm
   # namespace: argocd
 data:
-  # add an additional local user with apiKey and login capabilities
-  #   apiKey - allows generating API keys
-  #   login - allows to login using UI
-  accounts.alice: apiKey, login
-  # disables user. User is enabled by default
-  accounts.alice.enabled: "false"
+  admin.enabled: "true"
+  application.instanceLabelKey: argocd.argoproj.io/instance
+  exec.enabled: "false"
+  server.rbac.log.enforce.enable: "false"
+  timeout.hard.reconciliation: 0s
+  timeout.reconciliation: 180s
